@@ -1,3 +1,4 @@
+#include <stdlib.h>
 
 void fatal(char *message)
 {
