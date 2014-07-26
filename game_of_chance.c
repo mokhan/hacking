@@ -25,8 +25,6 @@ void jackpot();
 void input_name();
 void print_cards(char *, char *, int);
 int take_wager(int, int);
-void print_cards(char *, char *, int);
-int take_wager(int, int);
 void play_the_game();
 int pick_a_number();
 int dealer_no_match();
@@ -250,7 +248,7 @@ void play_the_game()
       update_player_data();
       printf("Would you like to play again? (y/n)  ");
       selection = '\n';
-      while (selection = '\n')
+      while (selection == '\n')
         scanf("%c", &selection);
       if(selection == 'n')
         play_again = 0;
